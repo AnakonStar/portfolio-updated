@@ -135,6 +135,8 @@ export default function Portfolio() {
   ];
 
   function changeActualSkill(skill: Skill) {
+    scrollToSection("skill-desc");
+
     if (skill.name === actualSkill.name) return;
 
     setIsSkillLoading(true);
@@ -154,8 +156,11 @@ export default function Portfolio() {
 
         * {
           box-sizing: border-box;
+          scroll-behavior: smooth;
+          scroll-padding-top: 50vh;
+          scroll-padding-bottom: 50vh;
         }
-        
+
         .pixel-button {
           position: relative;
           padding: 16px 100px;
@@ -472,10 +477,7 @@ export default function Portfolio() {
       <div className="pixel-divider"></div>
 
       {/* About Section */}
-      <section
-        id="about"
-        className="min-h-screen flex flex-col items-center justify-center px-6 py-20"
-      >
+      <section className="min-h-screen flex flex-col items-center justify-center px-6 py-20">
         <div className="lg:flex lg:items-center w-full gap-10 max-w-7xl">
           {/* Profile Image - Pixelated Circle */}
           <div className="flex justify-center mb-12">
@@ -501,7 +503,10 @@ export default function Portfolio() {
               A dedicated Full Stack Developer based in São Paulo, Brasil
             </h3>
 
-            <div className="pixel-border-box text-white font-bold relative z-10">
+            <div
+              id="about"
+              className="pixel-border-box text-white font-bold relative z-10"
+            >
               <p className="relative text-white leading-relaxed text-xs md:text-sm z-20">
                 I'm very efficient and focused in everything I do and as well as
                 building this portfolio, I like to get my hands dirty and make a
@@ -540,7 +545,7 @@ export default function Portfolio() {
           </div>
 
           {/* SASS Info Box */}
-          <div className="pixel-border-box max-w-2xl mx-auto">
+          <div id="skill-desc" className="pixel-border-box max-w-2xl mx-auto">
             <div className="content relative">
               {isSkillLoading ? (
                 <div className="text-center py-8">
