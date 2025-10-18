@@ -621,14 +621,18 @@ export default function Portfolio() {
 
           {/* Real Pixelated scrolls */}
           <div
-            className={`mb-12 flex gap-12 items-center ${
-              !showAcademic ? "flex-row-reverse justify-end" : "justify-start"
+            className={`mb-12 lg:flex-row flex flex-col gap-12 items-center ${
+              !showAcademic
+                ? "lg:flex-row-reverse flex-col lg:justify-end justify-center"
+                : "lg:justify-start justify-center"
             }`}
           >
             {/* Toggle Button */}
             <button
               className={`flex gap-8 items-center ${
-                showAcademic ? "flex-row-reverse justify-end" : "justify-start"
+                showAcademic
+                  ? "flex-row-reverse lg:justify-end justify-center"
+                  : "lg:justify-start justify-center"
               }`}
               onClick={() => setShowAcademic(!showAcademic)}
             >
