@@ -18,7 +18,7 @@ export default function Portfolio() {
       color: "#E34F26",
       letter: "H",
       image: "html.png",
-      desc: "Estruturação semântica de páginas web",
+      desc: "Semantic structuring of web pages",
       level: 3,
     },
     {
@@ -26,7 +26,7 @@ export default function Portfolio() {
       color: "#CC6699",
       letter: "S",
       image: "sass.png",
-      desc: "Pré-processador CSS para estilização avançada",
+      desc: "CSS preprocessor for advanced styling",
       level: 2,
     },
     {
@@ -34,7 +34,7 @@ export default function Portfolio() {
       color: "#61DAFB",
       letter: "R",
       image: "react.png",
-      desc: "Biblioteca JavaScript para interfaces dinâmicas",
+      desc: "JavaScript library for building dynamic interfaces",
       level: 3,
     },
     {
@@ -42,7 +42,7 @@ export default function Portfolio() {
       color: "#D83B01",
       letter: "O",
       image: "office.png",
-      desc: "Suite de produtividade e documentação",
+      desc: "Productivity suite and documentation tools",
       level: 2,
     },
     {
@@ -50,7 +50,7 @@ export default function Portfolio() {
       color: "#61DAFB",
       letter: "RN",
       image: "react-native.png",
-      desc: "Framework para desenvolvimento mobile multiplataforma",
+      desc: "Framework for cross-platform mobile development",
       level: 2,
     },
     {
@@ -58,7 +58,7 @@ export default function Portfolio() {
       color: "#1572B6",
       letter: "C",
       image: "css.png",
-      desc: "Estilização moderna e responsiva",
+      desc: "Modern and responsive styling",
       level: 3,
     },
     {
@@ -66,7 +66,7 @@ export default function Portfolio() {
       color: "#31A8FF",
       letter: "Ps",
       image: "photoshop.png",
-      desc: "Edição e criação de design gráfico",
+      desc: "Image editing and graphic design",
       level: 1,
     },
     {
@@ -74,7 +74,7 @@ export default function Portfolio() {
       color: "#181717",
       letter: "G",
       image: "github.png",
-      desc: "Controle de versão e colaboração em código",
+      desc: "Version control and code collaboration",
       level: 3,
     },
   ];
@@ -580,9 +580,9 @@ export default function Portfolio() {
                     </div>
                     <div className="flex-1">
                       <div className="text-xs text-purple-300 mb-1">
-                        {actualSkill.level === 1 && "Iniciante"}
-                        {actualSkill.level === 2 && "Intermediário"}
-                        {actualSkill.level === 3 && "Avançado"}
+                        {actualSkill.level === 1 && "Beginner"}
+                        {actualSkill.level === 2 && "Intermediate"}
+                        {actualSkill.level === 3 && "Advanced"}
                       </div>
                       <div className="flex gap-1">
                         {[1, 2, 3].map((level) => (
